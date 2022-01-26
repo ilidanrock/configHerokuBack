@@ -4,8 +4,8 @@ import express, { Application, Request, Response, NextFunction } from 'express';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
 import cors from 'cors'
-import passport from 'passport';
-import passportMiddle from '../middlewares/passport';
+// import passport from 'passport';
+// import passportMiddle from '../middlewares/passport';
 import routesUser from './routes/index';
 
 
@@ -25,8 +25,8 @@ app.use(
 	})
 );
 
-app.use(passport.initialize())
-passport.use(passportMiddle)
+// app.use(passport.initialize())
+// passport.use(passportMiddle)
 
 
 interface error {
