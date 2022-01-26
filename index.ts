@@ -1,5 +1,6 @@
-import { Response, Request } from 'express';
+import { Response, Request } from "express";
 const express =require('express');
+import { sequelize } from "./src/db";
 const app = express();
 const server = require('http').createServer(app);
 const io =require('socket.io')(server,{cors:{origin: "*"}});
