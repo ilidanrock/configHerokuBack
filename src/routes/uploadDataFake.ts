@@ -345,7 +345,13 @@ const router = Router()
             let track = await Vehicle.bulkCreate(vehicleFake); 
     //const userTrue = await User_Reg.findAll({where:{role:true},attributes:[['id','UserRegId']]})  
              const userTrues = await User.bulkCreate(idUser);  
-	res.send("Create Data Fake");
+			 const obj={
+				user_regs,
+				carrier,
+				track,
+				userTrues
+			 }
+	res.send(obj);
 });
 
 

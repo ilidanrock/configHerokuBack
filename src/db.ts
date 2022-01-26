@@ -13,6 +13,8 @@ import { Sequelize } from 'sequelize-typescript';
 	   port: 5432,
 	   username: 'dybhyljuusnpkx',
 	   password: '5e4f662401dea8ac7e9a9aad871b657cdf9872f4568f71db6ea12cdffaf82aef',
+	   storage: ':memory:',
+	   models: [__dirname + '/models'],
 	   pool: {
 		 max: 3,
 		 min: 1,
