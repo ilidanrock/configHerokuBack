@@ -23,7 +23,7 @@ router.use('/', payments);
 router.use('/', review);
 router.use('/', changePassword)
 router.use('/', history)
-//router.use('/', UploadDataFake) 
+router.use('/', UploadDataFake) 
 
 
 
