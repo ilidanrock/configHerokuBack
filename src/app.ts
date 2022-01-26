@@ -1,6 +1,6 @@
 
 import express, { Application, Request, Response, NextFunction } from 'express';
-import config from '../lib/config';
+
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
 import cors from 'cors'
