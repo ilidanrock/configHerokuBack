@@ -8,7 +8,7 @@ app.get('/', (req,res)=>{
     res.send('home');
 })
 
-server.listen(3001, ()=>{
+server.listen(process.env.PORT || 3001, ()=>{
     console.log("Server running...");
 })
  
