@@ -7,12 +7,12 @@ import { Sequelize } from 'sequelize-typescript';
  export const sequelize =
  process.env.NODE_ENV === "production"
    ? new Sequelize({
-	   database: DB_NAME,
+	   database: 'dff0hq6n5diohm',
 	   dialect: "postgres",
-	   host: DB_HOST,
+	   host: 'ec2-54-224-64-114.compute-1.amazonaws.com',
 	   port: 5432,
-	   username: DB_USER,
-	   password: DB_PASSWORD,
+	   username: 'dybhyljuusnpkx',
+	   password: '5e4f662401dea8ac7e9a9aad871b657cdf9872f4568f71db6ea12cdffaf82aef',
 	   pool: {
 		 max: 3,
 		 min: 1,
